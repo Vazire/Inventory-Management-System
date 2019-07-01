@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+label[for=favcity] {
+  position: relative;
+  display: block;
+  width: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+label[for=favcity]::after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  display: block;
+  background: red url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOBAMAAAGq7RFVAAAAJ1BMVEX///////////////////////////////////////////////////9Ruv0SAAAADHRSTlMACAoREoKDt7y9zc5qtZoyAAAAcklEQVQIHQXBsQnCUAAFwFOCCKbIABaWERzi1yaFAzmEpHYEC8GUKVQEkbyhvOOkZqdWt0/QYKqLzQeF7dv6y/RLwa2wYtk4Xxxe+t8yd1WuM/rcUc2gYHEeoP02umSgTR50ybBPRuiSZAS6ZAQ4jgCAPyjYJiRH4fymAAAAAElFTkSuQmCC') no-repeat center center;
+  pointer-events: none;
+}
+
+label[for=favcity] select {
+  border: 5px solid #eeeeee;
+  background: white;
+  padding: 7px 20px 7px 20px;
+  width: 100%;
+  font-size: 16px;
+ 
+  cursor: pointer;
+}
+
+label[for=favcity] select::-ms-expand {
+    display: none;
+}
+
+label[for=favcity] :-moz-any(select) {
+  width: 110%;
+}
+
+label[for=favcity].ie9 select {
+  width: 110%;
+}
+
+label[for=favcity] select:focus {
+  outline: 1px dotted #A9A9A9;
+}
