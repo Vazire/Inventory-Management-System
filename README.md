@@ -85,4 +85,9 @@ After Logging in
 
 ####  Devices Issued By Employee ####
 
+![2019-07-18 (20)](https://user-images.githubusercontent.com/40232447/61478159-97eff580-a9ae-11e9-82c8-f06410a4c3d0.png)
+
+**The user also has the option to remove devices from issued devices page**
+
+By clicking on the remove icon, the employee removed device with device id AUG-23
 
