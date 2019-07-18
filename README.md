@@ -51,9 +51,11 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
  
  #### Forgot Password ####
  
- **Answering Security Questions**
+ 1. Answering Security Questions
  
  ![2019-07-18 (9)](https://user-images.githubusercontent.com/40232447/61476170-0a120b80-a9aa-11e9-8814-1a38ed5df434.png)
  
  
+ 2. Creating New Password
  
+ ![2019-07-18 (11)](https://user-images.githubusercontent.com/40232447/61476480-cd92df80-a9aa-11e9-87f4-5b623611514d.png)
