@@ -112,4 +112,5 @@ By clicking on the remove icon, the employee removed device with device id AUG-2
 
 The device got added and we can see it updated on the all devices page
 
+![2019-07-18 (25)](https://user-images.githubusercontent.com/40232447/61479433-75aba700-a9b1-11e9-8a29-e0f8b843702d.png)
 
