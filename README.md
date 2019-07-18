@@ -71,3 +71,13 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
 After Logging in
 
 ![2019-07-18 (15)](https://user-images.githubusercontent.com/40232447/61477252-71c95600-a9ac-11e9-8351-5d8dc5d8903b.png)
+
+
+#### Devices Available at Employee's Location ####
+
+![2019-07-18 (17)](https://user-images.githubusercontent.com/40232447/61477734-8ce89580-a9ad-11e9-8376-09264a082f61.png)
+
+
+#### Issuing Devices ####
+
+
