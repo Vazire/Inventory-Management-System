@@ -32,3 +32,6 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
  #### Login Page ####
  
  ![2019-07-18 (1)](https://user-images.githubusercontent.com/40232447/61473524-2dd25300-a9a4-11e9-8467-faf088098fbc.png)
+
+#### Registration Page ####
+
