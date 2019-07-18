@@ -29,9 +29,6 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
  
  ## Employee Panel ##
  
- #### Login Page ####
- 
- ![2019-07-18 (1)](https://user-images.githubusercontent.com/40232447/61473524-2dd25300-a9a4-11e9-8467-faf088098fbc.png)
 
 #### Registration Page ####
 
@@ -40,3 +37,13 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
 #### Security Questions ####
 
 ![2019-07-18 (5)](https://user-images.githubusercontent.com/40232447/61475535-a2a78c00-a9a8-11e9-8e1e-916cf26afe6d.png)
+
+
+#### Registered Successfully ####
+
+![2019-07-18 (6)](https://user-images.githubusercontent.com/40232447/61475675-f7e39d80-a9a8-11e9-80c3-0fe02a904a2a.png)
+
+
+ #### Login Page ####
+ 
+ 
