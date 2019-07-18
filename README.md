@@ -59,3 +59,8 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
  2. Creating New Password
  
  ![2019-07-18 (11)](https://user-images.githubusercontent.com/40232447/61476480-cd92df80-a9aa-11e9-87f4-5b623611514d.png)
+ 
+ 
+3. Logging with New Password
+
+![2019-07-18 (12)](https://user-images.githubusercontent.com/40232447/61476743-54e05300-a9ab-11e9-947d-206daa6a39da.png)
