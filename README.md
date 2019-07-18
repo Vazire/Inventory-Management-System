@@ -27,4 +27,8 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
 
  Java jdk, MySQL, Apache Tomcat Webserver, MySQL Connector(Executable JAR File)
  
+ ## Employee Panel ##
+ 
+ #### Login Page ####
+ 
  
