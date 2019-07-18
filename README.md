@@ -10,3 +10,12 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
 2.  **Admin Panel**
 
 ## Technologies Used ##
+
+  **For Frontend**
+  
+  HTML, CSS, Bootstrap, JavaScript
+  
+   **For Backend**
+   
+   JSP(Java Servlet Pages), MySQL(Database)
+   
