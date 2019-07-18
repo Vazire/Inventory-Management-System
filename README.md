@@ -23,3 +23,8 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
    
    Eclipse
    
+## Requirements ##
+
+ Java jdk, MySQL, Apache Tomcat Webserver, MySQL Connector(Executable JAR File)
+ 
+ 
