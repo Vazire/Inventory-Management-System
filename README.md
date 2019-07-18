@@ -3,7 +3,7 @@
 
 An inventory management system enables a company to maintain a centralized record of every asset and item in the control of the organization, providing a single source of truth for the location of every item, vendor and supplier information, specifications, and the total number of a particular item currently in stock.
 
-This system is used by **TechMahindra Employees** for issuing devices for **Testing Purposes**.They can check what all devices are available at the employee's location, devices issued by a employee etc. The site consists of two panels :-
+This system is used by **TechMahindra Employees** for issuing devices for **Testing Purposes**.They can check what all devices are available at the employee's location, devices issued by a employee etc.The deployment was done by the company.The site consists of two panels :-
 
 
 1.  **Employee Panel**
@@ -92,3 +92,10 @@ After Logging in
 By clicking on the remove icon, the employee removed device with device id AUG-23
 
 ![2019-07-18 (21)](https://user-images.githubusercontent.com/40232447/61478646-85c28700-a9af-11e9-8c63-884178f99417.png)
+
+
+## Admin Panel ##
+
+#### Admin login ####
+
+
