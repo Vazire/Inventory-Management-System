@@ -98,4 +98,8 @@ By clicking on the remove icon, the employee removed device with device id AUG-2
 
 #### Admin login ####
 
+![2019-07-18 (22)](https://user-images.githubusercontent.com/40232447/61478920-57917700-a9b0-11e9-9ef0-65747a9813ed.png)
+
+
+#### All devices ####
 
