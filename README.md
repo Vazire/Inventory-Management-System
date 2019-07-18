@@ -80,4 +80,9 @@ After Logging in
 
 #### Issuing Devices ####
 
+![2019-07-18 (18)](https://user-images.githubusercontent.com/40232447/61477909-01bbcf80-a9ae-11e9-921b-df814a2146de.png)
+
+
+####  Devices Issued By Employee ####
+
 
