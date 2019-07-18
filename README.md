@@ -53,5 +53,7 @@ This system is used by **TechMahindra Employees** for issuing devices for **Test
  
  **Answering Security Questions**
  
+ ![2019-07-18 (9)](https://user-images.githubusercontent.com/40232447/61476170-0a120b80-a9aa-11e9-8814-1a38ed5df434.png)
+ 
  
  
