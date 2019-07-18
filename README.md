@@ -91,3 +91,4 @@ After Logging in
 
 By clicking on the remove icon, the employee removed device with device id AUG-23
 
+![2019-07-18 (21)](https://user-images.githubusercontent.com/40232447/61478646-85c28700-a9af-11e9-8c63-884178f99417.png)
