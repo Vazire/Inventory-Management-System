@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>hello</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  	<servlet>   
+  		<servlet-name>hello</servlet-name>
+  		<jsp-file>/index.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>hello</servlet-name>
+  		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>   
+  		<servlet-name>helloq</servlet-name>
+  		<jsp-file>/reg.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>helloq</servlet-name>
+  		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellor</servlet-name>
+  		<jsp-file>/custprofile.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellor</servlet-name>
+  		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellos</servlet-name>
+  		<jsp-file>/custadd.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellos</servlet-name>
+  		<url-pattern>/choose-device</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellot</servlet-name>
+  		<jsp-file>/custall.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellot</servlet-name>
+  		<url-pattern>/all</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellou</servlet-name>
+  		<jsp-file>/custav.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellou</servlet-name>
+  		<url-pattern>/available</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellov</servlet-name>
+  		<jsp-file>/adminlogin.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellov</servlet-name>
+  		<url-pattern>/adminlogin</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellow</servlet-name>
+  		<jsp-file>/alldevices.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellow</servlet-name>
+  		<url-pattern>/alldevices</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>hellox</servlet-name>
+  		<jsp-file>/adddevice.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellox</servlet-name>
+  		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>helloy</servlet-name>
+  		<jsp-file>/track.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>helloy</servlet-name>
+  		<url-pattern>/track</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>   
+  		<servlet-name>helloz</servlet-name>
+  		<jsp-file>/deletedevice.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>helloz</servlet-name>
+  		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>   
+  		<servlet-name>helloa</servlet-name>
+  		<jsp-file>/welcome.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>helloa</servlet-name>
+  		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>   
+  		<servlet-name>hellob</servlet-name>
+  		<jsp-file>/fsec.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellob</servlet-name>
+  		<url-pattern>/fsec</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>   
+  		<servlet-name>helloc</servlet-name>
+  		<jsp-file>/forgot.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>helloc</servlet-name>
+  		<url-pattern>/forgot</url-pattern>
+	</servlet-mapping>
+
+	
+	
+	<servlet>   
+  		<servlet-name>hellod</servlet-name>
+  		<jsp-file>/security.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>hellod</servlet-name>
+  		<url-pattern>/security</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
