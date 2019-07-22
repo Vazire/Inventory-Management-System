@@ -114,3 +114,7 @@ The device got added and we can see it updated on the all devices page
 
 ![2019-07-18 (25)](https://user-images.githubusercontent.com/40232447/61479433-75aba700-a9b1-11e9-8a29-e0f8b843702d.png)
 
+
+#### Tracking Table ####
+
+This table shows the history i.e when the device was issued and when it was returned(basically it is used for monitoring the employee's activities)
