@@ -25,7 +25,7 @@
 	</div>
 	<script >
     document.getElementById("btn").onclick = function () {
-        location.href = "index.jsp";}
+        location.href = "http://localhost:8080/hello/index";}
 	</script>	
 </body>
 </html>

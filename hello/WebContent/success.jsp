@@ -37,7 +37,7 @@
     		
 	%>
 	You are not logged in<br/>
-	<a href="index.jsp">Please Login</a>
+	<a href="http://localhost:8080/hello/index">Please Login</a>
 	<%} else {
 	%>
 	<jsp:include page="sidebar.jsp" />

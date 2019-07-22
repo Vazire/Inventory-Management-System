@@ -20,10 +20,13 @@
     int i = st.executeUpdate("insert into members(username, password, email, id , regdate, loc) values ('" + user + "','" + pwd + "','" + email + "','"+ userid +"', CURDATE(), '"+ loc  +"')");
     if (i > 0) {
        
-        response.sendRedirect("welcome.jsp");
+	    session.setAttribute("username", user);
+	    session.setAttribute("userid", userid);
+	     
+	    response.sendRedirect("http://localhost:8080/hello/security");
        
     } else {
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("http://localhost:8080/hello/reg");
     }
 %>
 </body>

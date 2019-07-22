@@ -13,20 +13,26 @@ try {
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
 	Class.forName("com.mysql.jdbc.Driver").newInstance();
-	connection = DriverManager.getConnection(connectionURL, "root",
-			"2348");
+	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	
 	String id=request.getParameter("id");
-	
+	String to=(String)session.getAttribute("username");  
+
 	
 	    PreparedStatement ps=connection.prepareStatement("update devices set status='Not Issued' , issueto=?, date=?  where id=? ");  
 	    ps.setString(1, "-");
 	    ps.setString(2, null);
 	    ps.setString(3, id);
-	    	              
+	    PreparedStatement ps1=connection.prepareStatement("update track set dateofreturn=now() where deviceid=? and issueto=? and  dateofreturn is NULL");
+	    ps1.setString(1,id);
+	    ps1.setString(2,to);
+	    
+	    
 	    	int i=ps.executeUpdate();  
 	    	if (i>0) {
-	 	    	response.sendRedirect("custall.jsp");
+	    		int j=ps1.executeUpdate();
+	    		if(j>0)
+	 	    	response.sendRedirect("http://localhost:8080/hello/all");
 	 	    	} 
 	
 } catch (Exception ex) {

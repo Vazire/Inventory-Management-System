@@ -1,6 +1,19 @@
 @CHARSET "ISO-8859-1";
 
+.btn{
+	color:#e60000;
+	background-color:#fff;
+	outline:none;
+	border: 1px solid #e60000;
+}
+.btn:hover{
+	color:#fff;
+	background-color:#e60000;
+}
 
+.btn:active {
+    transform: scale(0.95);
+}
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,7 +26,7 @@ select {
   border-radius: 0;
 }
 
-label[for=favcity] {
+label {
   position: relative;
   display: block;
   width: 400px;
@@ -21,7 +34,7 @@ label[for=favcity] {
   cursor: pointer;
 }
 
-label[for=favcity]::after {
+label::after {
   content: ' ';
   position: absolute;
   right: 0;
@@ -33,8 +46,8 @@ label[for=favcity]::after {
   pointer-events: none;
 }
 
-label[for=favcity] select {
-  border: 5px solid #eeeeee;
+label select {
+  border: 5px solid #e60000;
   background: white;
   padding: 7px 20px 7px 20px;
   width: 100%;
@@ -43,18 +56,15 @@ label[for=favcity] select {
   cursor: pointer;
 }
 
-label[for=favcity] select::-ms-expand {
+label select::-ms-expand {
     display: none;
 }
 
-label[for=favcity] :-moz-any(select) {
+label :-moz-any(select) {
   width: 110%;
 }
 
-label[for=favcity].ie9 select {
+label.ie9 select {
   width: 110%;
 }
 
-label[for=favcity] select:focus {
-  outline: 1px dotted #A9A9A9;
-}

@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*,java.util.*"%>
 <!DOCTYPE html>
 <html>
@@ -15,8 +14,7 @@ try {
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
 	Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
-	connection = DriverManager.getConnection(connectionURL, "root",
-			"2348");
+	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	
 	
 	String id = request.getParameter("did");
@@ -39,11 +37,9 @@ try {
  
 	if (i > 0) {
 	    
-	    response.sendRedirect("alldevices.jsp");
+	    response.sendRedirect("http://localhost:8080/hello/alldevices");
 	 
-	} else {
-	    response.sendRedirect("error.jsp");
-	}	
+	}
 	 	       
 	 	       
 	 	      

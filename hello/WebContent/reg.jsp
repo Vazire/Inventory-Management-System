@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +26,7 @@
   		<input class="form" type="text" required placeholder="Employee ID *" name="id"><br>
   		<input class="form" type="password" required placeholder="Password *" name="pass"><br>
   		
-  		<input class="butn" type="submit" value="Register"><br>
+  		<input class="butn" type="submit" value="Next"><br>
   		</form>
   		<div class="footer">
   			<div class="us">Already registered?</div>
@@ -36,7 +35,7 @@
   	</div>
   	<script >
     document.getElementById("btn").onclick = function () {
-        location.href = "index.jsp";}
+        location.href = "http://localhost:8080/hello/index";}
 	</script>
 </body>
 </html> 

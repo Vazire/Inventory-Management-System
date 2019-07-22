@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.an{
+	text-decoration:none;
+	color:#e60000;
+}
 body{
   font-family: 'Montserrat', sans-serif;
   background-image:url("https://ak8.picdn.net/shutterstock/videos/24223858/thumb/1.jpg");

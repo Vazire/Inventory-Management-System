@@ -34,13 +34,13 @@ try {
 	 	        session.setAttribute("username", name);
 	 	 
 	 	         session.setAttribute("loggedin","yes");
-	 	         response.sendRedirect("custprofile.jsp");
+	 	         response.sendRedirect("http://localhost:8080/hello/profile");
 	 	    	}
 	 	    else {
-	 	         out.println("Invalid credentials <a href='index.jsp'>try again</a>");
+	 	         out.println("Invalid credentials <a href='http://localhost:8080/hello/index'>try again</a>");
 	 	    }
 	    	}
-	    	else out.println("Please Register first <a href='reg.jsp'>try again</a>");
+	    	else out.println("Please Register first <a href='http://localhost:8080/hello/reg'>try again</a>");
 	
 } 
 	catch (Exception ex) {

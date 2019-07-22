@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +10,7 @@
 <% 
 session.setAttribute("adlogin","no");
 session.invalidate();
-response.sendRedirect("adminlogin.jsp");
+response.sendRedirect("http://localhost:8080/hello/adminlogin");
 %>
 
 

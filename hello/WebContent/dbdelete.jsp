@@ -33,7 +33,7 @@ try {
 	    		   rs.deleteRow();
 	    		   i++;
 	    	 }
-	    	if(i>0) response.sendRedirect("alldevices.jsp");
+	    	if(i>0) response.sendRedirect("http://localhost:8080/hello/alldevices");
 } catch (Exception ex) {
 	out.println(ex);
 	out.println("Unable to connect to database.");

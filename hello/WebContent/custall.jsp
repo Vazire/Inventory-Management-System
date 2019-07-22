@@ -15,7 +15,7 @@
 
 <% if(session.getAttribute("loggedin")=="no") 
 {
-	response.sendRedirect("login.jsp");
+	response.sendRedirect("http://localhost:8080/hello/index");
 }
 %>
 
@@ -48,19 +48,16 @@ try {
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
 	Class.forName("com.mysql.jdbc.Driver").newInstance();
-	connection = DriverManager.getConnection(connectionURL, "root",
-			"2348");
+	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	
-	 String to;
-     to=(String)session.getAttribute("username");     
+	String to=(String)session.getAttribute("username");     
 		
 	
-	
-	    PreparedStatement ps=connection.prepareStatement("select * from devices where issueto=?");
-	    ps.setString(1,to);
+	PreparedStatement ps=connection.prepareStatement("select * from devices where issueto=?");
+	ps.setString(1,to);
 	    	  
-	    ResultSet rs=ps.executeQuery();  
-	    	 while (rs.next()) {
+	ResultSet rs=ps.executeQuery();  
+	while (rs.next()) {
 	 	   
 	 	    	String id=rs.getString("id");
 	 	    	String company=rs.getString("company");

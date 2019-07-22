@@ -17,10 +17,10 @@
 		<a href="#" class="welcome"><%=session.getAttribute("username")%></a>
 		<div class="content">
 			
-			<a href="custprofile.jsp"><i class="fas fa-user-circle fa-xs"></i><span>About</span></a>
-  			<a href="custall.jsp"><i class="fas fa-tachometer-alt fa-xs"></i><span>Issued Devices</span></a>
-  			<a href="custav.jsp"><i class="fas fa-briefcase fa-xs"></i><span>Available Devices</span></a>
-  			<a href="#"><i class="fas fa-briefcase-medical fa-xs"></i><span>Issue Devices</span></a>
+			<a href="http://localhost:8080/hello/profile"><i class="fas fa-user-circle fa-xs"></i><span>About</span></a>
+  			<a href="http://localhost:8080/hello/all"><i class="fas fa-tachometer-alt fa-xs"></i><span>Issued Devices</span></a>
+  			<a href="http://localhost:8080/hello/available"><i class="fas fa-briefcase fa-xs"></i><span>Available Devices</span></a>
+  			<a href="http://localhost:8080/hello/choose-device"><i class="fas fa-briefcase-medical fa-xs"></i><span>Issue Devices</span></a>
   			<a href="logout.jsp"><i class="fas fa-sign-out-alt fa-xs"></i><span>Logout</span></a>
   		
   		</div>

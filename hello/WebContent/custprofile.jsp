@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%><%@page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <title>Insert title here</title>
 <style>
         .center{
@@ -35,7 +35,7 @@
 <body>
 <% if(session.getAttribute("loggedin")=="no") 
 {
-	response.sendRedirect("login.jsp");
+	response.sendRedirect("http://localhost:8080/hello/index");
 }
 %>
 <%@include file="sidebar.jsp" %>
@@ -62,19 +62,15 @@ try {
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
 	Class.forName("com.mysql.jdbc.Driver").newInstance();
-	connection = DriverManager.getConnection(connectionURL, "root",
-			"2348");
+	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	
-	 String to;
-	to=(String)session.getAttribute("username");     
+	String to=(String)session.getAttribute("username");     
 	
-	    PreparedStatement ps=connection.prepareStatement(  
-	    	    "select * from members where username=?");  
-	    	  
-	    ps.setString(1, to);
+	PreparedStatement ps=connection.prepareStatement("select * from members where username=?");  
+	ps.setString(1, to);
 	    	              
-	    	ResultSet rs=ps.executeQuery();  
-	    	 while (rs.next()) {
+	ResultSet rs=ps.executeQuery();  
+	while (rs.next()) {
 	 	    
 	 	    
 	 	    	

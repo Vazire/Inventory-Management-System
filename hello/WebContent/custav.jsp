@@ -13,7 +13,7 @@
 
 <% if(session.getAttribute("loggedin")=="no") 
 {
-	response.sendRedirect("login.jsp");
+	response.sendRedirect("http://localhost:8080/hello/index");
 }
 %>
 
@@ -42,7 +42,7 @@
   
 
 <%
-try {
+try{
 	
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
@@ -50,15 +50,13 @@ try {
 	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	String to=(String)session.getAttribute("username");     
 		
-	
-	
-	    PreparedStatement ps=connection.prepareStatement("select * from devices where status='Not Issued' and location in (select loc from members where username=?)");
-	    ps.setString(1,to);
+	PreparedStatement ps=connection.prepareStatement("select * from devices where status='Not Issued' and location in (select loc from members where username=?)");
+	ps.setString(1,to);
 	    	  
 	    	 
 	    	              
-	    	ResultSet rs=ps.executeQuery();  
-	    	     while (rs.next()) {
+	ResultSet rs=ps.executeQuery();  
+	while (rs.next()) {
 	 	    
 	 	    		String id=rs.getString("id");
 	 	    		String company=rs.getString("company");

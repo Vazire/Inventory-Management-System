@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*" %>
 <!DOCTYPE html >
 <html>
@@ -9,13 +8,12 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <title>TechM IMS | All Devices</title>
 <link rel="stylesheet" href="styles/table.css">
-
 </head>
 <body>
 
 <% if(session.getAttribute("adlogin")=="no") 
 {
-	response.sendRedirect("adminlogin.jsp");
+	response.sendRedirect("http://localhost:8080/hello/adminlogin");
 }
 %>
 
@@ -29,19 +27,19 @@
 				<a class="nav-link" href="adminlogout.jsp">Logout</a>
 			</li>
 		</ul>	
-	</nav>
+</nav>
 
-<form method="get" action="deletedevice.jsp" style="text-align:center;float:right;margin:10px;">
+<form method="get" action="http://localhost:8080/hello/delete" style="text-align:center;float:right;margin:10px;">
 
 <button  type="submit" class=" btn  btn-lg" >Delete Device</button>
 
 </form>
-<form method="get" action="track.jsp" style="text-align:center;float:right;margin:10px;">
+<form method="get" action="http://localhost:8080/hello/track" style="text-align:center;float:right;margin:10px;">
 
 <button  type="submit" class=" btn  btn-lg" >Track Records</button>
 
 </form>
-<form method="get" action="adddevice.jsp" style="text-align:center;float:right;margin:10px;">
+<form method="get" action="http://localhost:8080/hello/add" style="text-align:center;float:right;margin:10px;">
 
 <button  type="submit" class=" btn  btn-lg" >Add Device</button>
 
@@ -56,7 +54,7 @@
             <th class="ttitle" colspan="7">
                 <h2>TechMahindra Inventory</h2>
             </th>
-        </tr>
+    </tr>
     <tr>
             
             <th>Device ID</th>
@@ -64,8 +62,8 @@
             <th>Model </th>
             <th>Location</th>
             <th>Issued Status</th>
-             <th>Issued to</th>
-             <th>Date of Issue</th>
+            <th>Issued to</th>
+            <th>Date of Issue</th>
            
     </tr>
   </thead>
@@ -77,19 +75,12 @@ try {
 	String connectionURL = "jdbc:mysql://localhost:3306/dbname";
 	Connection connection = null;
 	Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
-	connection = DriverManager.getConnection(connectionURL, "root",
-			"2348");
+	connection = DriverManager.getConnection(connectionURL, "root","2348");
 	
-	
-	
-	
-	    PreparedStatement ps=connection.prepareStatement(  
-	    	    "select * from devices ");  
+	PreparedStatement ps=connection.prepareStatement("select * from devices ");  
 	    	  
-	    	 
-	    	              
-	    	ResultSet rs=ps.executeQuery();  
-	    	 while (rs.next()) {
+	ResultSet rs=ps.executeQuery();  
+	while (rs.next()) {
 	 	    
 	 	    	String id=rs.getString("id");
 	 	    	String company=rs.getString("company");

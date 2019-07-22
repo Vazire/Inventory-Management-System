@@ -11,7 +11,7 @@
 session.setAttribute("loggedin","no");
 session.setAttribute("issued","0");
 session.invalidate();
-response.sendRedirect("index.jsp");
+response.sendRedirect("http://localhost:8080/hello/index");
 %>
 </body>
 </html>
